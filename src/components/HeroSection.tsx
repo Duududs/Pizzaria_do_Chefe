@@ -1,4 +1,3 @@
-import heroImg from "@/assets/hero.png";
 export default function HeroSection() {
   const scrollToMenu = () => {
     document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" });
@@ -6,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-background">
       <img
-        src={heroImg}
+        src="/images/hero.png"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         aria-hidden="true"

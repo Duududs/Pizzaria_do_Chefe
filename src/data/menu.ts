@@ -1,9 +1,3 @@
-import calabresaImg from "@/assets/Calabresa.png";
-import frangoCatupiryImg from "@/assets/Frango c Catupiry.png";
-import margheritaImg from "@/assets/Margherita.png";
-import pepperoniImg from "@/assets/Pepperoni.png";
-import portuguesaImg from "@/assets/Portuguesa.png";
-import quatroQueijosImg from "@/assets/Quatro Queijos.png";
 export interface MenuItem {
   id: string;
   name: string;
@@ -18,7 +12,7 @@ export const menuItems: MenuItem[] = [
     name: "Margherita",
     description: "Molho de tomate, mussarela de búfala, manjericão fresco e azeite",
     prices: { P: 32, M: 42, G: 55 },
-    image: margheritaImg,
+    image: "/images/margherita.png",
     category: "tradicionais",
   },
   {
@@ -26,7 +20,7 @@ export const menuItems: MenuItem[] = [
     name: "Calabresa",
     description: "Calabresa fatiada, cebola, azeitonas e mussarela",
     prices: { P: 30, M: 40, G: 52 },
-    image: calabresaImg,
+    image: "/images/calabresa.png",
     category: "tradicionais",
   },
   {
@@ -34,7 +28,7 @@ export const menuItems: MenuItem[] = [
     name: "Quatro Queijos",
     description: "Mussarela, gorgonzola, parmesão e catupiry",
     prices: { P: 35, M: 45, G: 58 },
-    image: quatroQueijosImg,
+    image: "/images/quatro-queijos.png",
     category: "especiais",
   },
   {
@@ -42,7 +36,7 @@ export const menuItems: MenuItem[] = [
     name: "Portuguesa",
     description: "Presunto, ovos, cebola, azeitonas, ervilha e mussarela",
     prices: { P: 33, M: 43, G: 56 },
-    image: portuguesaImg,
+    image: "/images/portuguesa.png",
     category: "tradicionais",
   },
   {
@@ -50,7 +44,7 @@ export const menuItems: MenuItem[] = [
     name: "Frango c/ Catupiry",
     description: "Frango desfiado, catupiry, milho e mussarela",
     prices: { P: 34, M: 44, G: 57 },
-    image: frangoCatupiryImg,
+    image: "/images/frango-catupiry.png",
     category: "especiais",
   },
   {
@@ -58,7 +52,7 @@ export const menuItems: MenuItem[] = [
     name: "Pepperoni",
     description: "Pepperoni importado, mussarela e molho de tomate especial",
     prices: { P: 36, M: 46, G: 60 },
-    image: pepperoniImg,
+    image: "/images/pepperoni.png",
     category: "especiais",
   },
 ];
