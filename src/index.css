@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 40 33% 95%;
+    --foreground: 0 0% 12%;
+    --card: 40 33% 98%;
+    --card-foreground: 0 0% 12%;
+    --popover: 40 33% 98%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 0 78% 42%;
+    --primary-foreground: 40 33% 98%;
+    --secondary: 45 90% 55%;
+    --secondary-foreground: 0 0% 12%;
+    --muted: 40 20% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 78% 35%;
+    --accent-foreground: 40 33% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 30% 80%;
+    --input: 0 30% 80%;
+    --ring: 0 78% 42%;
+    --radius: 0.5rem;
+    --cream: 40 33% 95%;
+    --cream-dark: 40 25% 88%;
+    --red-deep: 0 78% 35%;
+    --red-bright: 0 78% 50%;
+    --gold: 45 90% 55%;
+    --green-olive: 120 30% 35%;
+    --font-display: 'Passion One', cursive;
+    --font-body: 'Open Sans', sans-serif;
+    --checker-size: 20px;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+.checker-border {
+  background-image:
+    linear-gradient(45deg, hsl(var(--primary)) 25%, transparent 25%),
+    linear-gradient(-45deg, hsl(var(--primary)) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, hsl(var(--primary)) 75%),
+    linear-gradient(-45deg, transparent 75%, hsl(var(--primary)) 75%);
+  background-size: var(--checker-size) var(--checker-size);
+  background-position: 0 0, 0 calc(var(--checker-size)/2), calc(var(--checker-size)/2) calc(var(--checker-size)/-2), calc(var(--checker-size)/-2) 0;
+}
