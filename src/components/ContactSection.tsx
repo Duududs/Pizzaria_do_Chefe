@@ -43,14 +43,18 @@ export default function ContactSection() {
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
+              name="name"
               type="text"
+              autoComplete="name"
               placeholder="Seu nome"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               className="w-full bg-muted border-2 border-border rounded px-4 py-3 font-body text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none transition-colors"
             />
             <input
+              name="email"
               type="email"
+              autoComplete="email"
               placeholder="Seu email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
