@@ -53,6 +53,7 @@ npm run dev
 
 #### ➜] Live Demo
 
+https://pizzaria-do-chefe.vercel.app
 ---
 
 #### ➜] Preview
